@@ -21,6 +21,7 @@ if ( ! isset( $content_width ) ) {
 
 $storefront = (object) array(
 	'version'    => $storefront_version,
+	//prueba para ver si funciona github.
 
 	/**
 	 * Initialize all the things.
