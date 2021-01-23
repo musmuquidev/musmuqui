@@ -8,6 +8,8 @@
  * @package storefront
  */
 
+echo "<h1>Hola Juan ;)</h1>";
+
 do_action( 'storefront_loop_before' );
 
 while ( have_posts() ) :
