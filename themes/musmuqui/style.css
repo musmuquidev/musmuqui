@@ -1,0 +1,163 @@
+/*
+    Theme Name: musmuqui
+    Theme URI:
+    Author: Jorge G. Cano
+    Author URI: https://www.linkedin.com/in/jorgegcano/
+    Description: Tema diseñado para musmuqui amazonas specialty coffee
+    Version: 1.0
+    License: GNU General Public License v2 or later
+    License URI: http://www.gnu.org/licenses/gpl-2.0.html
+    Tags: coffe, amazonas, food, drinks
+    Text Domain: musmuqui
+*/
+
+
+:root {
+    /** Fuentes **/
+    --fuentePrincipal : 'Josefin Sans', sans-serif;
+    --fuenteSecundaria : 'Raleway', sans-serif;
+
+    /** Colores **/
+    --grisOscuro: #2f2e2e;
+    --colorTexto: #1a1a1a;
+    --grisClaro: #ebebeb;
+    --blanco: #ffffff;
+    --black: #000000;
+    --amarilloMusmuqui:  #F8931E;
+    --naranjaMusmuqui: #F15925;
+    --marronOscuroMusmuqui: #27120D;
+    --rojoMusmuqui: #AE3216;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* Now 10px = 1rem! */
+}
+
+body {
+    font-size: 16px; /* px fallback */
+    font-size: 1.6rem; /* default font-size for document */
+    line-height: 2; /* a nice line-height */
+    /*font-family: var(--fuentePrincipal);*/
+    color: var(--colorTexto);
+  }
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+h1, h2, h3, h4 {
+    /*font-family: var(--fuentePrincipal);*/
+    margin: 1rem 0;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.8rem;
+}
+
+h3 {
+    font-size: 3.6rem;
+}
+
+h4 {
+    font-size: 2.4rem;
+}
+
+/*Globales*/
+
+a {
+    text-decoration: none;
+    outline-color: transparent;
+    outline-width: 0;
+}
+
+p {
+    font-size: 2rem;
+}
+
+button:focus, input:focus, textarea:focus {
+    outline: none;
+}
+
+@media (min-width: 991px) {
+    p {
+        font-size: 2.2rem;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+hr {
+    border: 1px solid var(--grisClaro);
+}
+
+.imagen-destacada {
+    margin-bottom: 3rem;
+}
+
+
+/*Utilidades*/
+.text-center {
+    text-align: center;
+}
+
+.texto-primario {
+    color: var(--grisOscuro);
+}
+
+.seccion {
+    padding: 5rem 0;
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 10px 10px 10px;
+}
+
+/** Botón **/
+
+.boton {
+    background-color: var(--blanco);
+    color: var(--black);
+    padding: 1rem 3rem;
+    display: block;
+    flex: 1;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: .5rem;
+}
+
+.boton-primario {
+    background-color: var(--marronOscuroMusmuqui);
+    color: var(--blanco);
+}
+
+@media (min-width: 991px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
+}
