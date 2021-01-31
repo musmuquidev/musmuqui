@@ -162,3 +162,9 @@ hr {
         flex: 0 0 auto;
     }
 }
+
+
+/*Header*/
+.site-header {
+  background-color: var(--amarilloMusmuqui);
+}
